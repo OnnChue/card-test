@@ -2,7 +2,21 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+
+    
+
+    extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        mono: ['Space Mono', 'monospace'],
+        serif: ['Young Serif', 'serif'],
+      },
+
+      colors: {
+        'primary': '#5b21b6',
+        
+      },
+    },
   },
   plugins: [],
 }

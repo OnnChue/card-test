@@ -1,5 +1,55 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono&family=Young+Serif&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .check-box{
+    appearance: none;
+
+    border:3px solid blue;
+    width: 20px;
+    height: 20px;
+
+} */
+/* .check-box{
+    @apply appearance-none;
+    @apply border-[3px] border-solid border-blue-600;
+    @apply w-[20px] h-[20px];
+
+    &:checked{
+        @apply bg-yellow-200
+    }
+} */
+
+.switch{
+    @apply appearance-none;
+    @apply w-[150px] h-[60px] relative rounded-full border-4 border-blue-200 duration-500;
+
+    &::before{
+        content: "";
+        @apply absolute bg-red-600 w-[40px] h-[40px] rounded-full top-[6px] left-[6px] duration-500;
+    }
+
+    &checked{
+        @apply bg-blue-300;
+
+        &::before{
+
+            @apply translate-x-[90px];
+        }
+    }
+}
+
+
+/* .switch:checked{
+    @apply bg-blue-300;
+} */
+
+/* .switch:checked::before {
+    content: "";
+    translate: 90px;
+    @apply translate-x-[90px]
+} */
