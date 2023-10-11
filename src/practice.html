@@ -4,45 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 
-<body>
-    <main class="h-screen mx-auto bg-gradient-to-r from-cyan-500 to-blue-500">
-        <div class="flex justify-around mx-auto container">
-            <a href="#"
-                class="border-4 border-primary rounded-2xl px-10 py-5 text-primary text-2xl hover:bg-primary hover:text-white duration-500 mt-20">Home</a>
-            <a href="#"
-                class="border-4 border-primary rounded-2xl px-10 py-5 text-primary text-2xl hover:bg-primary hover:text-white duration-500 mt-20">About</a>
-            <a href="#"
-                class="border-4 border-primary rounded-2xl px-10 py-5 text-primary text-2xl hover:bg-primary hover:text-white duration-500 mt-20">Contact</a>
-            <a href="#"
-                class="border-4 border-primary rounded-2xl px-10 py-5 text-primary text-2xl hover:bg-primary hover:text-white duration-500 mt-20">Services</a>
-        </div>
-        <div class="flex container mx-auto justify-around items-center my-80">
-            <div class="left-texts p-2">
+<body class="bg-white container mx-auto flex flex-col">
+    <nav class="bg-white p-5 shadow md:flex md:items-center md:justify-between ">
+        <div class="flex justify-between items-center">
+            <span class="font-bold font-roboto text-2xl cursor-pointer text-red-700">
 
-                <h2 class="font-bold text-stone-800 text-6xl mb-5
-                hover:text-white duration-500 ">Hello</h2>
-                <h1 class="font-bold font-sans text-primary text-8xl mb-5  hover:text-white duration-500">I'm Onn Chue</h1>
-                <h3 class="font-bold font-sans text-6xl text-stone-800  hover:text-white duration-500">Welcome to my website</h3>
-                <!-- <ul>
-                        <li class="p-4 flex">
-                            <i class="fa-brands fa-facebook pr-4"></i>
-                            <i class="fa-brands fa-facebook-messenger pr-4"></i>
-                            <i class="fa-brands fa-instagram pr-4"></i>
-                            <i class="fa-brands fa-twitter pr-4"></i>
-                        </li>
-                    </ul> -->
-            </div>
+                <img src="https://png.pngtree.com/png-vector/20221015/ourmid/pngtree-devil-logo-vector-hell-art-devil-vector-png-image_39729404.png"
+                    alt="" class="h-20 inline">
 
-            <div class="flex">
-                <img src="../img/FB_IMG_1632207575065.jpg" alt="" class="h-[250px] rounded-full ml-32 hover:h-96 duration-500">
+                Hellion
+            </span>
+
+            <span class="text-3xl mx-2 cursor-pointer text-red-700 md:hidden block">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+
+        <ul
+            class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="font-bold text-2xl hover:text-cyan-500">HOME</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="font-bold text-2xl hover:text-cyan-500">SERVICES</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="font-bold text-2xl hover:text-cyan-500">CONTACT</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="font-bold text-2xl hover:text-cyan-500">ABOUT</a>
+            </li>
+
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="font-bold text-2xl hover:text-cyan-500">BLOG</a>
+            </li>
+
+            <button class="bg-cyan-400 text-white font-bold px-6 py-2 mx-4 rounded hover:bg-red-600 duration-500 ">
+                Get Started
+            </button>
+        </ul>
+    </nav>
+   <main class=" md:flex md:items-center md:justify-between">
+    <div class="flex items-center  mx-auto my-[20vh] ">
+        <div class="p-2 ">
+            <h1 class="font-bold text-4xl text-gray-900 mx-auto max-w-4xl hover:text-red-700 duration-500 text-center py-4 md:text-6xl">
+                Coading
+                <span class="text-bold md:text-6xl text-4xl md:px-0 px-2 text-red-600">
+                    is the main step
+                </span>
+                    of programing language
+            </h1>
+            <div class="text-lg mt-8 max-w-xl mx-auto text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, eos?Lorem ipsum dolor, sit amet 
             </div>
         </div>
-        </div>
-    </main>
+    </div>
+   </main>
 </body>
 
 </html>
